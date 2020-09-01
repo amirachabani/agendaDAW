@@ -53,7 +53,7 @@ include 'includes/functions/functions.php'
 
 <div class="bgBlue container shadow">
     <form id ="contact" action ="">
-        <legend>Add a new contact <span>*All the fields are mandatory*</span></legend>
+        <legend>Add a new contact <span>*All the fields are neccisaire*</span></legend>
         
         <?php include 'includes/layout/form.php'; ?>
         

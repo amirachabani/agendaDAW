@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 22 août 2020 à 12:32
--- Version du serveur :  10.4.11-MariaDB
--- Version de PHP : 7.2.31
+-- Généré le : mar. 01 sep. 2020 à 22:07
+-- Version du serveur :  10.4.14-MariaDB
+-- Version de PHP : 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,8 +40,8 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `name`, `company`, `phone`, `id_user`) VALUES
-(1, 'ali2', 'ali', '+33699451044', 1),
-(2, 'ali boudjema', 'university of yahia ', '+33699451044', 1);
+(3, 'amira chabani', 'facebook', '+21300000000', 1),
+(4, 'jaroudib asma', 'batna2', '+231415', 1);
 
 -- --------------------------------------------------------
 
@@ -93,7 +93,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT pour la table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `login`
