@@ -1,0 +1,266 @@
+/*--------------------------------Custom Properties------------------------------------*/
+:root{
+    --first: #f7fbff;
+    --second:#1ca8bb;
+    --third: #4e4e4e;
+    --forth: #adda66; 
+    --primaryFont: 'Arial', Helvetica, sans-serif;
+    --secondaryFont:'Poppins', sans-serif;
+}
+/*--------------------------------General------------------------------------*/
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--first);
+    font-family: var(--primaryFont);
+}
+
+/*--------------------------------Menu------------------------------------*/
+.bgBlue{
+    background-color: var(--second);
+}
+
+.bgYellow{
+    background-color: var(--forth);
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.shadow{
+    -webkit-box-shadow: 1px 9px 7px -2px rgba(0,0,0,0.28);
+    -moz-box-shadow: 1px 9px 7px -2px rgba(0,0,0,0.28);
+    box-shadow: 1px 9px 7px -2px rgba(0,0,0,0.28);
+    border-radius: 10px;
+}
+
+h1, h2{
+    font-family: var(--secondaryFont);
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1{
+    padding: 20px;
+    color: white;
+}
+
+h2{
+    font-size: 2rem;
+    color:var(--first);
+}
+
+.Bar{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center; 
+}
+
+.containerBar{
+    background-color: var(--third);
+}
+
+/*------------------Buttons---------------------------*/
+.btn{
+    font-size: 2rem;
+    text-decoration: none;
+    position: relative;
+    margin-left: 1rem;
+}
+.btn:hover{
+    cursor:pointer;
+}
+
+.btn-edit {
+    color: var(--second);
+}
+
+.btn-delete{
+    color: var(--first);
+}
+
+.back{
+background-color: var(--second);
+border-radius: 5px;
+text-align: center;
+color: white;
+font-weight: 700;
+font-size: 1.2rem;
+padding: .5rem;
+}
+/*--------------------------------Buttons---------------------*/
+
+/*------------------------------------------Form------------------------------------------------*/
+form{
+    padding: 3rem;
+    margin-top: 2rem;
+}
+form legend{
+    font-family: var(--secondaryFont);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+legend span{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    clear:both;
+    display: block;
+}
+
+.input{
+    padding: .5rem 0;
+}
+
+.input label{
+    font-size: 1.2rem;
+}
+
+.input input[type="text"],
+.input input[type="tel"]{
+    width: 100%;
+    border:none;
+    padding: .5rem;
+    height: 3rem;
+    margin-top: .5rem;
+    font-size: 1.2rem;
+}
+
+.send{
+    display: flex;
+    justify-content: flex-end;
+}
+.input input[type="submit"]{
+
+    background-color: var(--first);
+    border: none;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition-property: background-color,color;
+    transition: .2s ease-in-out;
+    flex:1;
+}
+
+.input input[type="submit"]:hover{
+    background-color: var(--third);
+    color: white;
+    cursor: pointer;
+}
+
+/*-----------------------List of contects----------------------------*/
+
+.contacts{
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.contactsContainer{
+    max-width: 800px;
+    margin:4rem auto 0 auto;
+}
+
+.totalContacts{
+    font-family: var(--secondaryFont);
+    margin: 2rem 0;
+    text-align: center;
+    color: var(--first);
+    font-size: 2rem;
+}
+
+.totalContacts span{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.seeker{
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    border: none;
+    margin: 2rem 0;
+}
+
+.tableContainer{
+  overflow: hidden; 
+}
+
+.contactList{
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+.contactList thead{
+    background-color: var(--first);
+    text-transform: uppercase;
+}
+
+.contactList thead th{
+    padding: 1rem 0;
+}
+
+.contactList tbody td{
+    padding: .5rem;
+    
+}
+
+.contactList tbody td:nth-child(4){
+    text-align: center;
+}
+
+.contactList button{
+    background-color: transparent !important;
+    border: none;
+}
+
+/*--------------------Notifications--------------------------------*/
+
+
+.notification{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem 3rem;
+    opacity: 0;
+    Transition: opacity .5s ease;
+}
+.visible{
+opacity: 1;
+}
+
+.successful{
+    background-color: rgb(179, 241, 117, 0.8);
+    color:green;
+}
+
+.error{
+    background-color: rgb(238, 148, 166, 0.8);
+    color: rgb(163,0,33);
+}
+
+@media (min-width:768px){
+    .inputs{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .input{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+
+    .input input[type="submit"]{
+        flex: 0 0 auto;
+    }
+}
+
